@@ -18,10 +18,10 @@ export default function MidHeader() {
                 
             </ul>
             <ul className="flex justify-between m-2">
-                {midHeader.map(v => <li className="m-1.5"><Link href={v.link}>{v.name}</Link></li>)}
+                {midHeader.map((v, idx) => <li key={idx} className="m-1.5"><Link href={v.link}>{v.name}</Link></li>)}
             </ul>
             <ul className="flex justify-center items-center">
-                {midHeader2.map(v => <li className="mx-1.5"><Link href={v.link}>{v.name}</Link></li>)}
+                {midHeader2.map((v, idx) => <li key={idx} className="mx-1.5"><Link href={v.link}>{v.name}</Link></li>)}
             </ul>
         </div>
     )
