@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import TopHeader from './main/topHeader';
 import MidHeader from './main/midHeader';
+import Footer from './footer/footer';
 
 
 
@@ -14,6 +15,10 @@ export default function Main() {
                 <TopHeader session={session} />
                 <MidHeader />
             </header>
+            
+            <footer>
+                <Footer />
+            </footer>
         </div>
 
 
